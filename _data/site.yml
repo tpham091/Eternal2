@@ -10,6 +10,8 @@ street_address: 1629 S Presa St
 address_locality: San Antonio
 address_region: TX
 postal_code: "78210"
+latitude: "29.4042033"
+longitude: "-98.4841224"
 hours_strip: Mon – Sat · Noon – 8pm · Closed Sunday
 hours_display: Mon – Sat, Noon – 8pm<br>Closed Sunday
 walkins: Walk-ins always welcome

@@ -45,7 +45,19 @@ schema: gallery
     </div>
     <ul class="gallery-grid gallery-grid-work" data-gallery aria-label="Recent Eternal Courage Tattoo photos">
       {% for photo in site.data.gallery %}
-      {% assign photo_alt = "Eternal Courage Tattoo gallery photo " | append: forloop.index %}
+      {% assign photo_artist = nil %}
+      {% assign photo_style = nil %}
+      {% for artist in site.data.artists %}
+        {% if artist.photos contains photo.file %}
+          {% assign photo_artist = artist %}
+          {% assign photo_style = artist.tags | first %}
+        {% endif %}
+      {% endfor %}
+      {% if photo_artist %}
+        {% assign photo_alt = photo_style | append: " tattoo by " | append: photo_artist.name | append: " at Eternal Courage Tattoo in San Antonio" %}
+      {% else %}
+        {% assign photo_alt = "Traditional tattoo work at Eternal Courage Tattoo in San Antonio" %}
+      {% endif %}
       <li class="gallery-item gallery-item-work">
         <button class="gallery-open" type="button" data-gallery-open aria-label="Expand gallery photo {{ forloop.index }}">
           <img src="/images/gallery/{{ photo.file }}" width="1200" height="900" alt="{{ photo_alt }}" loading="lazy" decoding="async">

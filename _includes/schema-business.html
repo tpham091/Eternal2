@@ -4,18 +4,28 @@
 {
   "@context": "https://schema.org",
   "@type": "TattooParlor",
+  "additionalType": "https://schema.org/LocalBusiness",
   "@id": "{{ "/" | absolute_url }}#business",
   "name": "{{ business.brand }}",
   "url": "{{ "/" | absolute_url }}",
   "telephone": "+1-210-733-8255",
   "email": "{{ business.email }}",
-  "image": "{{ "/images/og-image.jpg" | absolute_url }}",
+  "image": [
+    "{{ "/images/og-image.jpg" | absolute_url }}",
+    "{{ "/images/the-shop.jpg" | absolute_url }}",
+    "{{ "/images/hero-eternal-courage-virgin-mary-1.jpg" | absolute_url }}"
+  ],
   "priceRange": "{{ business.price_range }}",
   "areaServed": {
     "@type": "City",
     "name": "San Antonio"
   },
-  "hasMap": "{{ business.review_url }}",
+  "hasMap": "{{ business.maps_url }}",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": {{ business.latitude }},
+    "longitude": {{ business.longitude }}
+  },
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "{{ business.street_address }}",
@@ -34,8 +44,7 @@
   ],
   "sameAs": [
     "{{ business.facebook_url }}",
-    "{{ business.instagram_url }}",
-    "{{ business.review_url }}"
+    "{{ business.instagram_url }}"
   ],
   "employee": [
     {% for artist in site.data.artists %}

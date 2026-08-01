@@ -4,8 +4,8 @@
   "description": "Custom tattoos, cover-ups, reworks and flash in San Antonio, TX.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#171310",
-  "theme_color": "#171310",
+  "background_color": "#3C6DAA",
+  "theme_color": "#3C6DAA",
   "icons": [
     {
       "src": "/icons/apple-touch-icon.png",
