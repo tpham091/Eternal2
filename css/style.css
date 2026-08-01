@@ -134,28 +134,50 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
 .section-head { max-width: 720px; margin-bottom: 28px; }
 .section-head .mono { color: var(--brass); display: block; margin-bottom: 10px; }
 
-.plain-artist-grid,
+.plain-artist-list,
+.artist-work-grid,
 .plain-photo-grid {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.plain-artist-list,
+.artist-work-grid,
+.plain-photo-grid {
   display: grid;
   gap: 24px;
 }
-.plain-artist-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.plain-artist-list { gap: 44px; }
+.artist-work-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .plain-photo-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
-.plain-artist-grid li,
+.plain-artist-list li,
+.artist-work-grid li,
 .plain-photo-grid li {
   min-width: 0;
 }
 
-.plain-artist-grid li {
-  text-align: center;
+.artist-work-block {
+  padding-top: 28px;
+  border-top: 1px solid rgba(240, 196, 90, 0.34);
 }
 
-.plain-artist-grid h3 {
-  margin: 10px 0 2px;
+.artist-work-block:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.artist-summary {
+  display: grid;
+  grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.artist-summary h3 {
+  margin: 0 0 4px;
   color: var(--paper);
 }
 
@@ -166,6 +188,7 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
   object-position: 50% 34%;
 }
 
+.artist-work-grid img,
 .plain-photo-grid img {
   width: 100%;
   height: auto;
@@ -258,14 +281,16 @@ footer .wrap {
 @media (max-width: 900px) {
   .topbar-inner { align-items: flex-start; flex-direction: column; }
   .topnav { justify-content: flex-start; }
-  .plain-artist-grid,
+  .artist-work-grid,
   .plain-photo-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contact-plain { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 560px) {
   body { font-size: 16px; }
-  .plain-artist-grid,
+  .artist-summary { grid-template-columns: 1fr; }
+  .artist-photo { max-width: 240px; }
+  .artist-work-grid,
   .plain-photo-grid { grid-template-columns: 1fr; }
   .section-pad { padding: 48px 0; }
 }
