@@ -1,22 +1,144 @@
+# Artist roster + per-artist portfolio photos.
+# `photos` are filenames from images/gallery/, chosen by the gallery
+# photo numbers shown on /gallery.html.
+
 - name: Kelly Edwards
+  slug: kelly-edwards
   instagram: "https://www.instagram.com/kellyedwardstattoo"
   image: /images/kelly-edwards-headshot.jpg
+  bio: >-
+    Japanese traditional tattooing built for the long haul -- full backpieces and bodysuits with dragons, tigers and classic irezumi motifs.
+  tags:
+    - Japanese Traditional
+    - Bodysuit
+    - Color
+  photos:
+    - IMG_1255.JPG   # 3
+    - IMG_1256.PNG   # 4
+    - IMG_1257.PNG   # 5
+    - IMG_1258.PNG   # 6
+    - IMG_1318.PNG   # 62
+    - IMG_1319.PNG   # 63
+
 - name: Harley Martinez
+  slug: harley-martinez
   instagram: "https://www.instagram.com/harley.tattooer"
   image: /images/harley-martinez-headshot.jpg
+  bio: >-
+    Neo-traditional animal and skull portraits with heavy black and grey shading -- wolves, panthers and birds of prey rendered with real weight.
+  tags:
+    - Neo-Traditional
+    - Black & Grey
+    - Animal Portraits
+  photos:
+    - IMG_1292.PNG   # 39
+    - IMG_1293.PNG   # 40
+    - IMG_1294.PNG   # 41
+    - IMG_1295.PNG   # 42
+    - IMG_1296.PNG   # 43
+    - IMG_1297.PNG   # 44
+    - IMG_1298.PNG   # 45
+    - IMG_1299.PNG   # 46
+    - IMG_1300.PNG   # 47
+
 - name: Corben Jimenez
+  slug: corben-jimenez
   instagram: "https://www.instagram.com/eyecloset"
   image: /images/corben-jimenez-headshot.jpg
+  bio: >-
+    Japanese-influenced imagery and religious iconography in detailed black and grey -- hannya masks, sacred hearts and dragon sleeves.
+  tags:
+    - Japanese-Influenced
+    - Religious
+    - Black & Grey
+  photos:
+    - IMG_1283.PNG   # 31
+    - IMG_1284.PNG   # 32
+    - IMG_1285.PNG   # 33
+    - IMG_1286.PNG   # 34
+    - IMG_1288.PNG   # 35
+    - IMG_1289.PNG   # 36
+    - IMG_1290.PNG   # 37
+    - IMG_1291.PNG   # 38
+
 - name: Armando Garza
+  slug: armando-garza
   instagram: "https://www.instagram.com/mandogarza_"
   image: /images/armando-garza-headshot.jpg
+  bio: >-
+    Detailed black and grey illustrative work spanning traditional, Japanese and Chicano influences -- dragons, winged panthers and fine-line portraiture.
+  tags:
+    - Black & Grey
+    - Illustrative
+    - Chicano
+  photos:
+    - IMG_1303.PNG   # 48
+    - IMG_1304.PNG   # 49
+    - IMG_1305.PNG   # 50
+    - IMG_1306.PNG   # 51
+    - IMG_1307.PNG   # 52
+    - IMG_1308.PNG   # 53
+    - IMG_1309.PNG   # 54
+    - IMG_1310.PNG   # 55
+    - IMG_1311.PNG   # 56
+    - IMG_1312.PNG   # 57
+
 - name: Chelsea Kotzur
+  slug: chelsea-kotzur
   instagram: "https://www.instagram.com/chelseakotzurtattoo"
-  profile: /artists/chelsea-kotzur.html
   image: /images/chelsea-kotzur-headshot.jpg
+  custom_portfolio: chelsea_portfolio
+  bio: >-
+    Traditional-inspired tattoos with bold linework, warm color, storybook figures, florals and folklore motifs.
+  tags:
+    - Traditional
+    - Color
+    - Folklore
+  photos:
+    - IMG_1259.PNG   # 7
+    - IMG_1260.PNG   # 8
+    - IMG_1261.PNG   # 9
+    - IMG_1262.PNG   # 10
+    - IMG_1263.PNG   # 11
+    - IMG_1264.PNG   # 12
+    - IMG_1265.PNG   # 13
+    - IMG_1266.PNG   # 14
+    - IMG_1275.PNG   # 23
+
 - name: Tyson Wilkinson
+  slug: tyson-wilkinson
   instagram: "https://www.instagram.com/tyson_wilkinson_tattoo"
   image: /images/tyson-wilkinson-headshot.jpg
+  bio: >-
+    Bold American traditional with confident linework and saturated color -- animal heads, flash-style pieces and classic tattoo motifs.
+  tags:
+    - Traditional
+    - Bold Linework
+    - Color
+  photos:
+    - IMG_1267.PNG   # 15
+    - IMG_1268.PNG   # 16
+    - IMG_1269.PNG   # 17
+    - IMG_1270.PNG   # 18
+    - IMG_1271.PNG   # 19
+    - IMG_1272.PNG   # 20
+    - IMG_1273.PNG   # 21
+    - IMG_1274.PNG   # 22
+
 - name: Maddie Leigh
+  slug: maddie-leigh
   instagram: "https://www.instagram.com/maddieleightx"
   image: /images/maddie-leigh-headshot.jpg
+  bio: >-
+    Traditional portrait and pin-up flash with the occasional dark twist -- bold linework, classic composition and a bit of attitude.
+  tags:
+    - Traditional
+    - Pin-Up Flash
+    - Black & Grey
+  photos:
+    - tattoo-gothic-portrait.png   # 1
+    - tattoo-taz.png   # 2
+    - IMG_1313.PNG   # 58
+    - IMG_1314.PNG   # 59
+    - IMG_1316.PNG   # 60
+    - IMG_1317.PNG   # 61

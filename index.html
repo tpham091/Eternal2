@@ -69,13 +69,12 @@ schema: business
     </div>
     <ul class="crew-grid">
       {% for artist in site.data.artists %}
-      {% assign artist_href = artist.profile | default: artist.instagram %}
       <li>
-        <a class="artist-card" href="{{ artist_href }}"{% unless artist.profile %} target="_blank" rel="noopener noreferrer"{% endunless %}>
+        <a class="artist-card" href="/artists/{{ artist.slug }}.html">
           <div class="pin" aria-hidden="true"></div>
           <div class="photo-frame"><img src="{{ artist.image }}" width="600" height="600" alt="Portrait of tattoo artist {{ artist.name }}" loading="lazy" decoding="async"></div>
           <h3 class="artist-name">{{ artist.name }}</h3>
-          <span class="artist-link mono">View {% if artist.profile %}profile{% else %}portfolio{% endif %} <span aria-hidden="true">→</span>{% unless artist.profile %}<span class="visually-hidden"> (opens Instagram in a new tab)</span>{% endunless %}</span>
+          <span class="artist-link mono">View portfolio <span aria-hidden="true">→</span></span>
         </a>
       </li>
       {% endfor %}
