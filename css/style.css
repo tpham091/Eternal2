@@ -5,13 +5,13 @@
   --ink-2: #1f1a15;
   --ink-3: #262019;
   --line: #F0C45A;
-  --line-dark: #254D82;
+  --line-dark: #2b241e;
   --paper: #fff8df;
   --paper-dim: #fff2c8;
   --brass: #F0C45A;
   --oxblood: #C5162E;
   --oxblood-2: #971326;
-  --shadow-blue: #254D82;
+  --shadow-ink: #0f0d0b;
   --radius: 6px;
   --display: "Rye", Georgia, serif;
   --serif: "Zilla Slab", Georgia, serif;
@@ -61,7 +61,7 @@ a { color: inherit; }
 
 .skip-link {
   position: absolute; left: -999px; top: 0; z-index: 200;
-  background: var(--brass); color: var(--shadow-blue); padding: 10px 16px;
+  background: var(--brass); color: var(--shadow-ink); padding: 10px 16px;
   font-family: var(--mono); font-weight: 600; border-radius: 0 0 var(--radius) 0;
 }
 .skip-link:focus { left: 0; }
@@ -117,7 +117,7 @@ a { color: inherit; }
   color: var(--paper); background: var(--oxblood); padding: 11px 18px;
   border: 2px solid var(--brass); border-radius: var(--radius); font-weight: 600;
 }
-.topnav a.call:hover { color: var(--shadow-blue); background: var(--brass); }
+.topnav a.call:hover { color: var(--shadow-ink); background: var(--brass); }
 
 @media (max-width: 780px) {
   .nav-toggle { display: inline-flex; }
@@ -145,13 +145,13 @@ a { color: inherit; }
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-solid { background: var(--oxblood); color: var(--paper); border-color: var(--brass); }
-.btn-solid:hover { background: var(--brass); color: var(--shadow-blue); }
+.btn-solid:hover { background: var(--brass); color: var(--shadow-ink); }
 .btn-outline { background: transparent; color: var(--paper); border-color: var(--line); }
-.btn-outline:hover { border-color: var(--brass); color: var(--shadow-blue); background: var(--brass); }
+.btn-outline:hover { border-color: var(--brass); color: var(--shadow-ink); background: var(--brass); }
 .btn-google {
-  background: var(--paper); color: var(--shadow-blue); border-color: var(--brass);
+  background: var(--paper); color: var(--shadow-ink); border-color: var(--brass);
 }
-.btn-google:hover { background: var(--brass); color: var(--shadow-blue); }
+.btn-google:hover { background: var(--brass); color: var(--shadow-ink); }
 .btn-google svg { flex: none; }
 
 /* ---------- hero ---------- */
@@ -169,7 +169,7 @@ a { color: inherit; }
 .hero::after {
   content: "";
   position: absolute; inset: 0;
-  background: rgba(60, 109, 170, 0.66);
+  background: rgba(23, 19, 16, 0.68);
 }
 .hero-content { position: relative; z-index: 1; max-width: 720px; }
 .eyebrow { display: inline-block; color: var(--paper); margin-bottom: 18px; }
@@ -224,13 +224,13 @@ a { color: inherit; }
   position: relative; display: block; text-decoration: none;
   background: var(--ink-3); border: 3px solid var(--line); border-radius: var(--radius);
   padding: 24px 18px 22px; text-align: center;
-  box-shadow: 5px 5px 0 var(--shadow-blue);
+  box-shadow: 5px 5px 0 var(--shadow-ink);
   transition: border-color 0.15s ease, transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
 .artist-card:hover {
   background: var(--oxblood);
   border-color: var(--brass);
-  box-shadow: 7px 7px 0 var(--shadow-blue);
+  box-shadow: 7px 7px 0 var(--shadow-ink);
   transform: translateY(-3px);
 }
 .artist-card .pin {
@@ -242,7 +242,7 @@ a { color: inherit; }
   aspect-ratio: 4 / 5;
   margin: 10px auto 18px; border-radius: var(--radius);
   overflow: hidden; border: 3px solid var(--line);
-  background: var(--shadow-blue);
+  background: var(--shadow-ink);
 }
 .photo-frame img { width: 100%; height: 100%; object-fit: contain; object-position: 50% 50%; }
 .artist-name { margin-bottom: 8px; font-size: 1.05rem; }
@@ -394,7 +394,7 @@ a { color: inherit; }
   position: fixed; top: 18px; right: 18px;
   width: 44px; height: 44px; border-radius: var(--radius);
   display: inline-flex; align-items: center; justify-content: center;
-  border: 2px solid var(--line); background: var(--paper); color: var(--shadow-blue);
+  border: 2px solid var(--line); background: var(--paper); color: var(--shadow-ink);
   font-family: var(--mono); font-size: 1.5rem; line-height: 1; cursor: pointer;
 }
 .gallery-lightbox-close:hover, .gallery-lightbox-close:focus-visible { background: var(--brass); }
