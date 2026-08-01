@@ -28,40 +28,22 @@ schema: business
       <span class="mono">Artists</span>
       <h2 id="crew-heading">Shop crew</h2>
     </div>
-    <ul class="plain-artist-list">
+    <ul class="crew-grid">
       {% for artist in site.data.artists %}
-      <li class="artist-work-block">
-        <div class="artist-summary">
-          <button class="image-open artist-photo" type="button" data-lightbox-open aria-label="Expand portrait of {{ artist.name }}">
+      <li>
+        <a class="artist-card" href="/artists/{{ artist.slug }}.html">
+          <div class="photo-frame">
             <img src="{{ artist.image }}" width="600" height="600" alt="Portrait of San Antonio tattoo artist {{ artist.name }} at Eternal Courage Tattoo" loading="lazy" decoding="async">
-          </button>
-          <div>
-            <h3>{{ artist.name }}</h3>
-            <a href="{{ artist.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
-        </div>
-        <ul class="artist-work-grid" aria-label="{{ artist.name }} portfolio">
-          {% assign portfolio_items = nil %}
-          {% if artist.custom_portfolio %}
-            {% assign portfolio_items = site.data[artist.custom_portfolio] %}
-            {% for tattoo in portfolio_items %}
-            <li>
-              <button class="image-open" type="button" data-lightbox-open aria-label="Expand {{ tattoo.alt | downcase }}">
-                <img src="{{ tattoo.src }}" width="{{ tattoo.width }}" height="{{ tattoo.height }}" alt="{{ tattoo.alt }}" loading="lazy" decoding="async">
-              </button>
-            </li>
-            {% endfor %}
-          {% else %}
-            {% assign primary_style = artist.tags | first %}
-            {% for photo in artist.photos %}
-            <li>
-              <button class="image-open" type="button" data-lightbox-open aria-label="Expand tattoo by {{ artist.name }}">
-                <img src="/images/gallery/{{ photo }}" width="1200" height="900" alt="{{ primary_style }} tattoo by {{ artist.name }} at Eternal Courage Tattoo in San Antonio" loading="lazy" decoding="async">
-              </button>
-            </li>
-            {% endfor %}
+          <h3 class="artist-name">{{ artist.name }}</h3>
+          {% if artist.tags %}
+          <span class="artist-style-label mono">Preferred styles</span>
+          <span class="artist-card-tags">
+            {% for tag in artist.tags %}<span>{{ tag }}</span>{% endfor %}
+          </span>
           {% endif %}
-        </ul>
+          <span class="artist-link mono">View portfolio <span aria-hidden="true">-&gt;</span></span>
+        </a>
       </li>
       {% endfor %}
     </ul>
