@@ -1,0 +1,70 @@
+---
+layout: default
+title: Chelsea Kotzur — Tattoo Artist at Eternal Courage Tattoo
+description: View Chelsea Kotzur's tattoo portfolio at Eternal Courage Tattoo in San Antonio, TX.
+og_title: Chelsea Kotzur — Eternal Courage Tattoo
+og_description: Traditional-inspired tattoo work by Chelsea Kotzur at Eternal Courage Tattoo in San Antonio, TX.
+og_image: /images/chelsea-kotzur/grim-reaper-shoulder.jpg
+preload_image: /images/chelsea-kotzur/grim-reaper-shoulder.jpg
+---
+{% assign business = site.data.site %}
+{% assign artist = site.data.artists | where: "name", "Chelsea Kotzur" | first %}
+
+<section class="page-hero artist-profile-hero">
+  <div class="wrap artist-profile-grid">
+    <div class="artist-profile-copy">
+      <a class="back-link mono" href="/#crew">&larr; Back to artists</a>
+      <span class="eyebrow mono">Artist profile</span>
+      <h1>{{ artist.name }}</h1>
+      <p>Traditional-inspired tattoos with bold linework, warm color, storybook figures, florals and folklore motifs.</p>
+      <div class="artist-tags" aria-label="Chelsea Kotzur tattoo style highlights">
+        <span>Traditional</span>
+        <span>Color</span>
+        <span>Folklore</span>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="{{ artist.instagram }}" target="_blank" rel="noopener noreferrer">Book with Chelsea<span class="visually-hidden"> (opens Instagram in a new tab)</span></a>
+        <a class="btn btn-outline" href="{{ business.phone_href }}">Call the shop</a>
+      </div>
+    </div>
+    <figure class="artist-profile-portrait">
+      <img src="{{ artist.image }}" width="600" height="600" alt="Portrait of tattoo artist {{ artist.name }}" loading="eager" decoding="async">
+      <figcaption class="mono">Resident artist</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section-pad" aria-labelledby="chelsea-portfolio-heading">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono">Portfolio</span>
+      <h2 id="chelsea-portfolio-heading">Selected tattoos</h2>
+      <p>Recent work by Chelsea Kotzur at Eternal Courage Tattoo.</p>
+    </div>
+    <ul class="gallery-grid gallery-grid-work artist-portfolio-grid" data-gallery aria-label="Chelsea Kotzur tattoo portfolio">
+      {% for tattoo in site.data.chelsea_portfolio %}
+      <li class="gallery-item gallery-item-work">
+        <button class="gallery-open" type="button" data-gallery-open aria-label="Expand {{ tattoo.alt | downcase }}">
+          <img src="{{ tattoo.src }}" width="{{ tattoo.width }}" height="{{ tattoo.height }}" alt="{{ tattoo.alt }}" loading="lazy" decoding="async">
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section-pad artist-profile-booking" aria-labelledby="chelsea-booking-heading">
+  <div class="wrap">
+    <div class="artist-booking-panel">
+      <div>
+        <span class="mono">Ready to book?</span>
+        <h2 id="chelsea-booking-heading">Start with Chelsea or call the shop.</h2>
+        <p>Send your reference images, placement, sizing and availability, or call Eternal Courage Tattoo during shop hours.</p>
+      </div>
+      <div class="artist-booking-actions">
+        <a class="btn btn-solid" href="{{ artist.instagram }}" target="_blank" rel="noopener noreferrer">Message Chelsea<span class="visually-hidden"> (opens Instagram in a new tab)</span></a>
+        <a class="btn btn-outline" href="/#contact">Shop info</a>
+      </div>
+    </div>
+  </div>
+</section>
