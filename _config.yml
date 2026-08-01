@@ -1,0 +1,11 @@
+title: Eternal Courage Tattoo
+description: Custom tattoos, cover-ups, reworks and flash in San Antonio, TX.
+url: "https://www.eternalcouragetattoo.com"
+baseurl: ""
+timezone: America/Chicago
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md

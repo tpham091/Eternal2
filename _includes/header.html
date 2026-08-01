@@ -1,0 +1,28 @@
+{% assign business = site.data.site %}
+{% assign nav_prefix = "" %}
+{% unless page.url == "/" %}
+  {% assign nav_prefix = "/" %}
+{% endunless %}
+<div class="hours-strip">
+  <div class="wrap mono">
+    <span>{{ business.hours_strip }}</span>
+    <span>{{ business.walkins }}</span>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand display">
+      <span class="mark" aria-hidden="true">✦</span> {{ business.brand_short }}
+    </a>
+    <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav class="topnav" id="primary-nav" aria-label="Primary">
+      <a href="{{ nav_prefix }}#crew">Artists</a>
+      <a href="/gallery.html">Gallery</a>
+      <a href="{{ nav_prefix }}#contact">Contact</a>
+      <a href="{{ business.phone_href }}" class="call">{{ business.phone }}</a>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,46 @@
+{% assign business = site.data.site %}
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TattooParlor",
+  "@id": "{{ "/" | absolute_url }}#business",
+  "name": "{{ business.brand }}",
+  "url": "{{ "/" | absolute_url }}",
+  "telephone": "+1-210-733-8255",
+  "email": "{{ business.email }}",
+  "image": "{{ "/images/og-image.jpg" | absolute_url }}",
+  "priceRange": "{{ business.price_range }}",
+  "areaServed": {
+    "@type": "City",
+    "name": "San Antonio"
+  },
+  "hasMap": "{{ business.review_url }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ business.street_address }}",
+    "addressLocality": "{{ business.address_locality }}",
+    "addressRegion": "{{ business.address_region }}",
+    "postalCode": "{{ business.postal_code }}",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "12:00",
+      "closes": "20:00"
+    }
+  ],
+  "sameAs": [
+    "{{ business.facebook_url }}",
+    "{{ business.instagram_url }}",
+    "{{ business.review_url }}"
+  ],
+  "employee": [
+    {% for artist in site.data.artists %}
+    { "@type": "Person", "name": "{{ artist.name }}", "sameAs": "{{ artist.instagram }}" }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
