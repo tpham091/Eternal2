@@ -150,6 +150,10 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
   min-width: 0;
 }
 
+.plain-artist-grid li {
+  text-align: center;
+}
+
 .plain-artist-grid h3 {
   margin: 10px 0 2px;
   color: var(--paper);
@@ -157,9 +161,9 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
 
 .artist-photo img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 50% 24%;
+  object-position: 50% 34%;
 }
 
 .plain-photo-grid img {
