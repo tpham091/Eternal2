@@ -39,11 +39,11 @@ layout: default
       <h2 id="portfolio-heading">Selected tattoos</h2>
       <p>Portfolio work by {{ artist.name }} at Eternal Courage Tattoo.</p>
     </div>
-    <ul class="gallery-grid gallery-grid-work artist-portfolio-grid" data-gallery aria-label="{{ artist.name }} tattoo portfolio">
+    <ul class="artist-portfolio-grid" aria-label="{{ artist.name }} tattoo portfolio">
       {% if portfolio_items %}
       {% for tattoo in portfolio_items %}
-      <li class="gallery-item gallery-item-work">
-        <button class="gallery-open" type="button" aria-label="Expand {{ tattoo.alt | downcase }}" data-gallery-open>
+      <li>
+        <button class="image-open" type="button" aria-label="Expand {{ tattoo.alt | downcase }}" data-lightbox-open>
           <img src="{{ tattoo.src }}" width="{{ tattoo.width }}" height="{{ tattoo.height }}" alt="{{ tattoo.alt }}" loading="lazy" decoding="async">
         </button>
       </li>
@@ -51,8 +51,8 @@ layout: default
       {% else %}
       {% for photo in artist.photos %}
       {% assign primary_style = artist.tags | first %}
-      <li class="gallery-item gallery-item-work">
-        <button class="gallery-open" type="button" aria-label="Expand tattoo {{ forloop.index }} by {{ artist.name }}" data-gallery-open>
+      <li>
+        <button class="image-open" type="button" aria-label="Expand tattoo {{ forloop.index }} by {{ artist.name }}" data-lightbox-open>
           <img src="/images/gallery/{{ photo }}" width="1200" height="900" alt="{{ primary_style }} tattoo by {{ artist.name }} at Eternal Courage Tattoo in San Antonio" loading="lazy" decoding="async">
         </button>
       </li>

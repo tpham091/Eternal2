@@ -1,80 +1,48 @@
 ---
 layout: default
-title: Eternal Courage Tattoo — Custom Tattoos in San Antonio, TX
-description: Eternal Courage Tattoo is a San Antonio, TX tattoo shop with resident artists specializing in custom work, cover-ups, reworks and flash. Walk-ins welcome, Mon–Sat.
-og_description: Resident artists, one shop, no cookie-cutter tattoos. Custom work, cover-ups, reworks and flash in San Antonio, TX. Walk-ins welcome.
+title: Eternal Courage Tattoo — San Antonio, TX
+description: Eternal Courage Tattoo is a tattoo shop at 1629 S Presa St in San Antonio, TX. Walk-ins welcome Monday through Saturday.
+og_description: Eternal Courage Tattoo in San Antonio, TX. Artists, shop photos, hours, phone, address and map.
 preload_image: /images/hero-eternal-courage-virgin-mary-1.jpg
 schema: business
 ---
 {% assign business = site.data.site %}
 
 <section class="hero" id="top">
-  <div class="wrap hero-content">
-    <span class="eyebrow mono">San Antonio, TX · Est. shop on S. Presa St.</span>
-    <h1>An artist for <em>every</em> style.</h1>
-    <p>Custom work, cover-ups, reworks and flash — resident artists, one shop, no cookie-cutter tattoos. Walk in or book a consultation.</p>
-    <div class="hero-ctas">
-      <a href="{{ business.phone_href }}" class="btn btn-solid">Call the shop</a>
-      <a href="#crew" class="btn btn-outline">Meet the artists</a>
+  <div class="wrap">
+    <button class="image-open hero-photo" type="button" data-lightbox-open aria-label="Expand Eternal Courage Tattoo shop artwork">
+      <img src="/images/hero-eternal-courage-virgin-mary-1.jpg" width="1200" height="800" alt="Old-school Virgin Mary tattoo flash artwork at Eternal Courage Tattoo in San Antonio" loading="eager" decoding="async">
+    </button>
+    <div class="hero-copy">
+      <span class="eyebrow mono">San Antonio tattoo shop</span>
+      <h1>Eternal Courage Tattoo</h1>
+      <p>{{ business.address_line_1 }}, {{ business.address_line_2 }}. Walk-ins welcome {{ business.hours_strip | downcase }}.</p>
+      <p><a href="{{ business.phone_href }}">{{ business.phone }}</a> · <a href="mailto:{{ business.email }}">{{ business.email }}</a></p>
     </div>
   </div>
 </section>
 
-<div class="wrap">
-  <div class="flash-divider" aria-hidden="true">
-    <span class="line"></span>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 5.6H20l-4.6 3.4 1.8 5.6L12 13.2 6.8 16.6l1.8-5.6L4 7.6h6.2z"/></svg>
-    <span class="line"></span>
-  </div>
-</div>
-
-<section class="section-pad" aria-labelledby="why-heading">
+<section class="section-pad" id="crew" aria-labelledby="crew-heading">
   <div class="wrap">
     <div class="section-head">
-      <span class="mono">Why Eternal Courage</span>
-      <h2 id="why-heading">Built on craft, not shortcuts</h2>
-    </div>
-    <ul class="usp-grid">
-      <li class="usp-card">
-        <img src="/images/the-chair.jpg" width="1200" height="800" alt="San Antonio tattoo artist working at an Eternal Courage Tattoo station" loading="lazy" decoding="async">
-        <div class="body">
-          <h3>Experienced artists</h3>
-          <p>From traditional and neo-traditional to fine line and custom work — every artist brings their own voice to the needle.</p>
-        </div>
-      </li>
-      <li class="usp-card">
-        <img src="/images/the-shop.jpg" width="1200" height="800" alt="Eternal Courage Tattoo shop interior at 1629 S Presa St in San Antonio" loading="lazy" decoding="async">
-        <div class="body">
-          <h3>Walk-ins welcome</h3>
-          <p>Small pieces and ready flash any day we're open. Larger custom work? Reach out to your artist to book a consultation.</p>
-        </div>
-      </li>
-      <li class="usp-card">
-        <img src="/images/clean-setup.jpg" width="1200" height="800" alt="Traditional tattoo flash sheets and shop artwork at Eternal Courage Tattoo" loading="lazy" decoding="async">
-        <div class="body">
-          <h3>Wide range of services</h3>
-          <p>Custom tattoos, cover-ups, reworks and flash. Fresh needles and thoroughly cleaned stations, every single session.</p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="section-pad crew-section" id="crew" aria-labelledby="crew-heading">
-  <div class="wrap">
-    <div class="section-head">
-      <span class="mono">The crew</span>
-      <h2 id="crew-heading">Meet the artists</h2>
-      <p>Tap an artist to see their portfolio and book directly with them.</p>
+      <span class="mono">Artists</span>
+      <h2 id="crew-heading">Shop crew</h2>
     </div>
     <ul class="crew-grid">
       {% for artist in site.data.artists %}
       <li>
         <a class="artist-card" href="/artists/{{ artist.slug }}.html">
-          <div class="pin" aria-hidden="true"></div>
-          <div class="photo-frame"><img src="{{ artist.image }}" width="600" height="600" alt="Portrait of San Antonio tattoo artist {{ artist.name }} at Eternal Courage Tattoo" loading="lazy" decoding="async"></div>
+          <div class="photo-frame">
+            <img src="{{ artist.image }}" width="600" height="600" alt="Portrait of San Antonio tattoo artist {{ artist.name }} at Eternal Courage Tattoo" loading="lazy" decoding="async">
+          </div>
           <h3 class="artist-name">{{ artist.name }}</h3>
-          <span class="artist-link mono">View portfolio <span aria-hidden="true">→</span></span>
+          {% if artist.tags %}
+          <span class="artist-style-label mono">Preferred styles</span>
+          <span class="artist-card-tags">
+            {% for tag in artist.tags %}<span>{{ tag }}</span>{% endfor %}
+          </span>
+          {% endif %}
+          <span class="artist-link mono">View portfolio <span aria-hidden="true">-&gt;</span></span>
         </a>
       </li>
       {% endfor %}
@@ -82,65 +50,38 @@ schema: business
   </div>
 </section>
 
-<section class="section-pad" aria-labelledby="gallery-heading" style="padding-bottom:0;">
+<section class="section-pad" id="photos" aria-labelledby="photos-heading">
   <div class="wrap">
     <div class="section-head">
-      <span class="mono">See the work</span>
-      <h2 id="gallery-heading">Browse the gallery</h2>
-      <p>Flash, custom pieces, cover-ups and shop life.</p>
+      <span class="mono">Photos</span>
+      <h2 id="photos-heading">Shop and tattoo photos</h2>
     </div>
-    <a href="/gallery.html" class="btn btn-solid">View the gallery</a>
+    <ul class="plain-photo-grid">
+      {% for image in site.data.shop_gallery %}
+      <li>
+        <button class="image-open" type="button" data-lightbox-open aria-label="Expand {{ image.alt | downcase }}">
+          <img src="{{ image.src }}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.alt }}" loading="lazy" decoding="async">
+        </button>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
 <section class="section-pad" id="contact" aria-labelledby="contact-heading">
   <div class="wrap">
     <div class="section-head">
-      <span class="mono">Get in touch</span>
-      <h2 id="contact-heading">Come see us</h2>
+      <span class="mono">Contact</span>
+      <h2 id="contact-heading">Visit the shop</h2>
     </div>
-
-    <div class="review-cta">
+    <div class="contact-plain">
       <div>
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <h3>Had work done with us?</h3>
-        <p>Leave us a review on Google — it helps other folks in San Antonio find the shop.</p>
-      </div>
-      <a class="btn btn-google" href="{{ business.review_url | escape }}" target="_blank" rel="noopener noreferrer">
-        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.85A10.99 10.99 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.09A6.6 0 0 1 5.5 12c0-.73.12-1.43.34-2.09V7.07H2.18A11 11 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg>
-        Leave a Google review
-      </a>
-    </div>
-    <div class="contact-panel">
-      <div class="contact-info">
-        <h3>Visit the shop</h3>
-        <p>Located in the heart of San Antonio. Walk-ins welcome during shop hours.</p>
-
-        <div class="info-row">
-          <span class="mono" id="address-label">Address</span>
-          <a class="val" href="{{ business.maps_url | escape }}" target="_blank" rel="noopener noreferrer" aria-labelledby="address-label">{{ business.address_line_1 }}<br>{{ business.address_line_2 }}<span class="visually-hidden"> (opens Google Maps in a new tab)</span></a>
-        </div>
-        <div class="info-row">
-          <span class="mono" id="phone-label">Phone</span>
-          <a class="val" href="{{ business.phone_href }}" aria-labelledby="phone-label">{{ business.phone }}</a>
-        </div>
-        <div class="info-row">
-          <span class="mono" id="email-label">Email</span>
-          <a class="val" href="mailto:{{ business.email }}" aria-labelledby="email-label">{{ business.email }}</a>
-        </div>
-        <div class="info-row">
-          <span class="mono">Hours</span>
-          <span class="val">{{ business.hours_display }}</span>
-        </div>
-
-        <div class="social-row">
-          <a class="social-btn" href="{{ business.facebook_url }}" target="_blank" rel="noopener noreferrer" aria-label="Eternal Courage Tattoo on Facebook (opens in a new tab)">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1z"/></svg>
-          </a>
-          <a class="social-btn" href="{{ business.instagram_url }}" target="_blank" rel="noopener noreferrer" aria-label="Eternal Courage Tattoo on Instagram (opens in a new tab)">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
-          </a>
-        </div>
+        <p><strong>Address</strong><br><a href="{{ business.maps_url | escape }}" target="_blank" rel="noopener noreferrer">{{ business.address_line_1 }}<br>{{ business.address_line_2 }}</a></p>
+        <p><strong>Phone</strong><br><a href="{{ business.phone_href }}">{{ business.phone }}</a></p>
+        <p><strong>Email</strong><br><a href="mailto:{{ business.email }}">{{ business.email }}</a></p>
+        <p><strong>Hours</strong><br>{{ business.hours_display }}</p>
+        <p><a href="{{ business.review_url | escape }}" target="_blank" rel="noopener noreferrer">Leave a Google review</a></p>
+        <p><a href="{{ business.facebook_url }}" target="_blank" rel="noopener noreferrer">Facebook</a> · <a href="{{ business.instagram_url }}" target="_blank" rel="noopener noreferrer">Instagram</a></p>
       </div>
       <div class="map-embed">
         <iframe src="{{ business.map_embed_url | escape }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Eternal Courage Tattoo at {{ business.address_line_1 }}, {{ business.city_state }}"></iframe>

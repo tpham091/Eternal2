@@ -1,6 +1,5 @@
 # Artist roster + per-artist portfolio photos.
-# `photos` are filenames from images/gallery/, chosen by the gallery
-# photo numbers shown on /gallery.html.
+# `photos` are filenames from images/gallery/.
 
 - name: Kelly Edwards
   slug: kelly-edwards
