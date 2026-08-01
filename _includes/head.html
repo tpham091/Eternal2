@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#171310">
+<meta name="theme-color" content="#171e2c">
 
 <title>{{ page_title }}</title>
 <meta name="description" content="{{ page_description | escape }}">
@@ -47,8 +47,4 @@
 
 {% if page.schema == "business" %}
 {% include schema-business.html %}
-{% elsif page.schema == "gallery" %}
-{% include schema-gallery.html %}
-{% elsif page.schema == "artist" %}
-{% include schema-artist.html %}
 {% endif %}
