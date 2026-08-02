@@ -2,78 +2,38 @@
   width: 899
   height: 554
   alt: Eternal Courage Tattoo artists standing together inside the San Antonio shop
-- src: /images/gallery/IMG_1256.PNG
-  width: 1320
-  height: 1638
-  alt: Kelly Edwards Japanese bodysuit tattoo photo moved to the shop and crew gallery
-- src: /images/gallery/IMG_1257.PNG
-  width: 1320
-  height: 1635
-  alt: Kelly Edwards traditional Japanese tattoo photo moved to the shop and crew gallery
-- src: /images/gallery/IMG_1258.PNG
-  width: 1320
-  height: 1629
-  alt: Kelly Edwards Japanese backpiece tattoo photo moved to the shop and crew gallery
-- src: /images/shop-crew/chelsea-1.jpg
-  width: 1714
-  height: 1074
-  alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/chelsea-2.jpg
-  width: 1652
-  height: 1074
-  alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/harley-1.jpg
-  width: 1340
-  height: 1720
-  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/harley-2.jpg
-  width: 1340
-  height: 1720
-  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
 - src: /images/shop-crew/harley-3.jpg
   width: 1340
   height: 1720
   alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/harley-4.jpg
-  width: 1340
-  height: 1720
-  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/harley-6.jpg
-  width: 1352
-  height: 1722
-  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/kelly-1.jpg
-  width: 1700
-  height: 1720
-  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/kelly-2.jpg
-  width: 1700
-  height: 1720
-  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/kelly-3.jpg
-  width: 1700
-  height: 1720
-  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/kelly-4.jpg
-  width: 1298
-  height: 1706
-  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/kelly-5.jpg
-  width: 1352
-  height: 1706
-  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/mando-1.jpg
-  width: 1358
-  height: 1718
-  alt: Armando tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/gallery/IMG_1257.PNG
+  width: 1320
+  height: 1635
+  alt: Kelly Edwards traditional Japanese tattoo photo moved to the shop and crew gallery
 - src: /images/shop-crew/mando-2.jpg
   width: 1358
   height: 1718
   alt: Armando tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/mando-3.jpg
-  width: 1358
-  height: 1718
-  alt: Armando tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/chelsea-1.jpg
+  width: 1714
+  height: 1074
+  alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/tyson-4.jpg
+  width: 1482
+  height: 1722
+  alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/kelly-2.jpg
+  width: 1700
+  height: 1720
+  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/harley-6.jpg
+  width: 1352
+  height: 1722
+  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/gallery/IMG_1256.PNG
+  width: 1320
+  height: 1638
+  alt: Kelly Edwards Japanese bodysuit tattoo photo moved to the shop and crew gallery
 - src: /images/shop-crew/mando-4.jpg
   width: 1358
   height: 1718
@@ -82,15 +42,55 @@
   width: 1482
   height: 1722
   alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/tyson-3.jpg
-  width: 1482
-  height: 1722
-  alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/tyson-4.jpg
-  width: 1482
-  height: 1722
-  alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/kelly-5.jpg
+  width: 1352
+  height: 1706
+  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/chelsea-2.jpg
+  width: 1652
+  height: 1074
+  alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/harley-1.jpg
+  width: 1340
+  height: 1720
+  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/mando-1.jpg
+  width: 1358
+  height: 1718
+  alt: Armando tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
 - src: /images/shop-crew/tyson-6.jpg
   width: 1652
   height: 1702
   alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/kelly-1.jpg
+  width: 1700
+  height: 1720
+  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/gallery/IMG_1258.PNG
+  width: 1320
+  height: 1629
+  alt: Kelly Edwards Japanese backpiece tattoo photo moved to the shop and crew gallery
+- src: /images/shop-crew/harley-4.jpg
+  width: 1340
+  height: 1720
+  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/mando-3.jpg
+  width: 1358
+  height: 1718
+  alt: Armando tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/kelly-4.jpg
+  width: 1298
+  height: 1706
+  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/tyson-3.jpg
+  width: 1482
+  height: 1722
+  alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/harley-2.jpg
+  width: 1340
+  height: 1720
+  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
+- src: /images/shop-crew/kelly-3.jpg
+  width: 1700
+  height: 1720
+  alt: Kelly tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
