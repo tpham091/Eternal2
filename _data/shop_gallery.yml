@@ -2,50 +2,10 @@
   width: 1200
   height: 800
   alt: Old-school Virgin Mary tattoo flash artwork at Eternal Courage Tattoo in San Antonio
-- src: /images/the-chair.jpg
-  width: 1200
-  height: 800
-  alt: San Antonio tattoo artist working at an Eternal Courage Tattoo station
-- src: /images/the-shop.jpg
-  width: 1200
-  height: 800
-  alt: Eternal Courage Tattoo shop interior at 1629 S Presa St in San Antonio
-- src: /images/clean-setup.jpg
-  width: 1200
-  height: 800
-  alt: Traditional tattoo flash sheets and shop artwork at Eternal Courage Tattoo
 - src: /images/gallery-shop-crew.png
   width: 899
   height: 554
   alt: Eternal Courage Tattoo artists standing together inside the San Antonio shop
-- src: /images/kelly-edwards-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of Japanese traditional tattoo artist Kelly Edwards at Eternal Courage Tattoo
-- src: /images/harley-martinez-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of neo-traditional tattoo artist Harley Martinez at Eternal Courage Tattoo
-- src: /images/corben-jimenez-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of black and grey tattoo artist Corben Jimenez at Eternal Courage Tattoo
-- src: /images/armando-garza-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of illustrative black and grey tattoo artist Armando Garza at Eternal Courage Tattoo
-- src: /images/chelsea-kotzur-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of traditional color tattoo artist Chelsea Kotzur at Eternal Courage Tattoo
-- src: /images/tyson-wilkinson-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of American traditional tattoo artist Tyson Wilkinson at Eternal Courage Tattoo
-- src: /images/maddie-leigh-headshot.jpg
-  width: 600
-  height: 600
-  alt: Portrait of traditional pin-up tattoo artist Maddie Leigh at Eternal Courage Tattoo
 - src: /images/gallery/IMG_1256.PNG
   width: 1320
   height: 1638
@@ -66,14 +26,6 @@
   width: 1652
   height: 1074
   alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/chelsea-3.jpg
-  width: 1652
-  height: 1074
-  alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/chelsea-4.jpg
-  width: 1652
-  height: 1074
-  alt: Chelsea tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
 - src: /images/shop-crew/harley-1.jpg
   width: 1340
   height: 1720
@@ -90,15 +42,7 @@
   width: 1340
   height: 1720
   alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/harley-5.jpg
-  width: 1340
-  height: 1720
-  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
 - src: /images/shop-crew/harley-6.jpg
-  width: 1352
-  height: 1722
-  alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/harley-7.jpg
   width: 1352
   height: 1722
   alt: Harley tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
@@ -142,19 +86,11 @@
   width: 1482
   height: 1722
   alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/tyson-2.jpg
-  width: 1482
-  height: 1722
-  alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
 - src: /images/shop-crew/tyson-3.jpg
   width: 1482
   height: 1722
   alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
 - src: /images/shop-crew/tyson-4.jpg
-  width: 1482
-  height: 1722
-  alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
-- src: /images/shop-crew/tyson-5.jpg
   width: 1482
   height: 1722
   alt: Tyson tattoo work and shop crew photo at Eternal Courage Tattoo in San Antonio
