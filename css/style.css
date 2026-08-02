@@ -228,6 +228,19 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
   color: var(--paper);
 }
 
+.shop-crew-feature {
+  margin: 0 auto 28px;
+  max-width: 980px;
+}
+
+.shop-crew-feature img {
+  width: 100%;
+  height: auto;
+  max-height: 62vh;
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+
 .artist-portfolio-grid img,
 .plain-photo-grid img {
   width: 100%;
