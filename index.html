@@ -52,13 +52,13 @@ schema: business
 
 <section class="section-pad" id="photos" aria-labelledby="photos-heading">
   <div class="wrap">
+    <div class="section-head">
+      <h2 id="photos-heading">Shop and crew</h2>
+    </div>
     {% assign featured_photo = site.data.shop_gallery | first %}
     <button class="image-open shop-crew-feature" type="button" data-lightbox-open aria-label="Expand {{ featured_photo.alt | downcase }}">
       <img src="{{ featured_photo.src }}" width="{{ featured_photo.width }}" height="{{ featured_photo.height }}" alt="{{ featured_photo.alt }}" loading="lazy" decoding="async">
     </button>
-    <div class="section-head">
-      <h2 id="photos-heading">Shop and crew</h2>
-    </div>
     <ul class="plain-photo-grid">
       {% for image in site.data.shop_gallery offset:1 %}
       <li>
