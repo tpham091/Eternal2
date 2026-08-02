@@ -229,14 +229,14 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
 }
 
 .shop-crew-feature {
-  margin: 0 auto 28px;
-  max-width: 980px;
+  margin: 0 auto 24px;
+  max-width: 1080px;
 }
 
 .shop-crew-feature img {
   width: 100%;
   height: auto;
-  max-height: 62vh;
+  max-height: 68vh;
   object-fit: cover;
   object-position: 50% 42%;
 }
