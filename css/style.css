@@ -14,8 +14,8 @@
   --shadow-ink: #0f0d0b;
   --radius: 0;
   --display: "Rye", Georgia, serif;
-  --serif: "Zilla Slab", Georgia, serif;
-  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --serif: "Rye", Georgia, serif;
+  --mono: "Rye", Georgia, serif;
   --max: 1180px;
 }
 
@@ -27,8 +27,9 @@ body {
   background: var(--ink);
   color: var(--paper);
   font-family: var(--serif);
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -45,16 +46,20 @@ h1, h2, h3, .display {
   color: var(--paper);
 }
 
-h1 { font-size: clamp(2.4rem, 7vw, 5rem); line-height: 1.05; }
-h2 { font-size: clamp(1.7rem, 4vw, 2.8rem); line-height: 1.1; }
-h3 { font-family: var(--serif); font-size: 1.2rem; letter-spacing: 0; text-transform: none; }
+h1 { font-size: clamp(2rem, 5.5vw, 3.6rem); line-height: 1.15; }
+h2 { font-size: clamp(1.4rem, 3vw, 2.1rem); line-height: 1.2; }
+h3 { font-family: var(--serif); font-size: 1.05rem; letter-spacing: 0.01em; line-height: 1.35; text-transform: none; }
 p { margin: 0 0 1em; color: var(--paper-dim); }
+
+/* Rye ships a single weight, so bold is synthesized and smears the inline
+   detail. Emphasize with colour instead. */
+strong, b { font-weight: 400; color: var(--brass); }
 
 .mono {
   font-family: var(--mono);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
 }
 
 .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
@@ -67,7 +72,7 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
 .skip-link {
   position: absolute; left: -999px; top: 0; z-index: 200;
   background: var(--brass); color: var(--shadow-ink); padding: 10px 16px;
-  font-family: var(--mono); font-weight: 600;
+  font-family: var(--mono); font-weight: 400;
 }
 .skip-link:focus { left: 0; }
 
@@ -80,7 +85,7 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
   display: flex; flex-wrap: wrap; gap: 8px 20px;
   justify-content: space-between;
   padding-top: 10px; padding-bottom: 10px;
-  font-size: 0.74rem;
+  font-size: 0.78rem;
 }
 
 .topbar {
@@ -104,8 +109,8 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
 .topnav a {
   color: var(--paper-dim);
   font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-decoration: underline;
 }
@@ -126,11 +131,11 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
 }
 .eyebrow { display: block; color: var(--brass); margin-bottom: 12px; }
 .hero h1 {
-  font-size: clamp(3rem, 11vw, 8.5rem);
-  letter-spacing: 0.06em;
+  font-size: clamp(2.5rem, 7.5vw, 5.6rem);
+  letter-spacing: 0.05em;
   margin-bottom: 18px;
 }
-.hero p { font-size: 1.15rem; }
+.hero p { font-size: 1.05rem; }
 
 .section-pad {
   padding: 64px 0;
@@ -334,8 +339,8 @@ p { margin: 0 0 1em; color: var(--paper-dim); }
   color: var(--paper);
   font-family: var(--mono);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
   text-decoration: none;
 }
 
@@ -443,7 +448,7 @@ footer .wrap {
 }
 
 @media (max-width: 560px) {
-  body { font-size: 16px; }
+  body { font-size: 15px; }
   .crew-grid,
   .artist-portfolio-grid,
   .plain-photo-grid { grid-template-columns: 1fr; }
