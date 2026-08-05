@@ -9,3 +9,6 @@ exclude:
   - Gemfile.lock
   - vendor
   - README.md
+  - node_modules
+  - package.json
+  - package-lock.json
